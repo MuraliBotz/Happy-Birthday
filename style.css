@@ -139,7 +139,7 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: 200px;
+  /*  margin-left: 200px;*/
     animation: neonGlow 1.5s infinite alternate;
     align-content: center;
 }

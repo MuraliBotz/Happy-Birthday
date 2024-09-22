@@ -133,12 +133,13 @@ img {
       margin-top: 0px; 
        height: 60px;
 	width: 100px;
-	animation: multiGlow 70s infinite;
+	
     }
 
 img {
       max-width: 100%;
       height: auto;
+	animation: multiGlow 70s infinite;
     }
     
 

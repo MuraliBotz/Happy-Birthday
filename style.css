@@ -126,13 +126,14 @@ img {
     left: 50%;
     position: absolute;
     padding-top: 250px;
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .image-container {
       margin-top: 0px; 
-  height: 60px;
+       height: 60px;
 	width: 100px;
+	animation: multiGlow 70s infinite;
     }
 
 img {
@@ -150,6 +151,8 @@ img {
 	transform-style: preserve-3d;
 	transform: perspective(2500px);
 	transition: 1s;
+	align-items: center;
+	display: flex;
 	}
 
 .birthdaycard:hover {
@@ -286,3 +289,58 @@ p {
 	outline-color: #333;
 	outline-style: dotted;
 	}
+
+
+@keyframes multiGlow {
+    0% {
+        filter: drop-shadow(0 0 2rem cyan);
+    }
+    6.25% {
+        filter: drop-shadow(0 0 2rem magenta);
+    }
+    12.5% {
+        filter: drop-shadow(0 0 2rem yellow);
+    }
+    18.75% {
+        filter: drop-shadow(0 0 2rem lime);
+    }
+    25% {
+        filter: drop-shadow(0 0 2rem red);
+    }
+    31.25% {
+        filter: drop-shadow(0 0 2rem blue);
+    }
+    37.5% {
+        filter: drop-shadow(0 0 2rem orange);
+    }
+    43.75% {
+        filter: drop-shadow(0 0 2rem purple);
+    }
+    50% {
+        filter: drop-shadow(0 0 2rem pink);
+    }
+    56.25% {
+        filter: drop-shadow(0 0 2rem lightblue);
+    }
+    62.5% {
+        filter: drop-shadow(0 0 2rem lightgreen);
+    }
+    68.75% {
+        filter: drop-shadow(0 0 2rem gold);
+    }
+    75% {
+        filter: drop-shadow(0 0 2rem coral);
+    }
+    81.25% {
+        filter: drop-shadow(0 0 2rem turquoise);
+    }
+    87.5% {
+        filter: drop-shadow(0 0 2rem violet);
+    }
+    93.75% {
+        filter: drop-shadow(0 0 2rem chartreuse);
+    }
+    100% {
+        filter: drop-shadow(0 0 2rem cyan);
+    }
+}

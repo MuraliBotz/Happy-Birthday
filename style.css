@@ -130,39 +130,13 @@ img {
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.glowing-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-left: 160px;
-    animation: neonGlow 1.5s infinite alternate;
-    align-content: center;
-}
-
-@keyframes neonGlow {
-    from {
-        box-shadow: 
-            0 0 10px rgba(255, 0, 255, 0.8),
-            0 0 20px rgba(255, 0, 255, 0.6),
-            0 0 30px rgba(255, 0, 255, 0.4),
-            0 0 40px rgba(0, 255, 255, 0.6),
-            0 0 50px rgba(0, 255, 255, 0.4),
-            0 0 60px rgba(0, 255, 0, 0.6),
-            0 0 70px rgba(0, 255, 0, 0.4);
+      margin-top: 0px; 
+  height: 60px;
+	width: 100px;
     }
-    to {
-        box-shadow: 
-            0 0 20px rgba(255, 0, 255, 1),
-            0 0 30px rgba(255, 0, 255, 0.7),
-            0 0 40px rgba(255, 0, 255, 0.5),
-            0 0 50px rgba(0, 255, 255, 0.7),
-            0 0 60px rgba(0, 255, 255, 0.5),
-            0 0 70px rgba(0, 255, 0, 0.7),
-            0 0 80px rgba(0, 255, 0, 0.5);
+
+img {
+      max-width: 100%;
+      height: auto;
     }
-}
+    

@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Happy Birthday</title>
@@ -9,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- Loader Section -->
     <div class="container">
         <div class="row">
             <div class="loader">
@@ -16,27 +19,37 @@
             </div>
         </div>
     </div>
+
+    <!-- Audio Section -->
     <audio class="song" controls loop>
         <source src="music.mp3">
-        </source>
         Your browser isn't invited for super fun audio time.
     </audio>
+
+    <!-- Confetti Canvas -->
     <canvas id="confetti"></canvas>
+
+    <!-- Main Section -->
     <div class="main">
         <div class="container pt-5">
             <div class="row">
 
+                <!-- Banner Image -->
                 <div class="col-12 col-xl-6 mx-auto">
-                    <img src="img/banner.png" alt="">
+                    <img src="img/banner.png" alt="Banner Image">
                 </div>
-                <div class="user-img">
-                     <img src="img/user.png" alt="">
+
+                <!-- User Image -->
+                <div class="col-12 col-xl-6 mx-auto text-center user-img">
+                    <img src="img/user.png" alt="User Image">
                 </div>
-  
-                <div class="col-12  text-center">
+
+                <!-- Name Section -->
+                <div class="col-12 text-center">
                     <div id="name" class="area">Madan Kumar</div>
                 </div>
 
+                <!-- Typing Section -->
                 <div class="col-12 text-center">
                     <div class="type-wrap">
                         <div id="typed-strings" class="typing">
@@ -48,45 +61,50 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xl-3 cake">
-                    <img src="img/cake.gif" alt="">
+                <!-- Cake Image -->
+                <div class="col-12 col-xl-3 text-center cake">
+                    <img src="img/cake.gif" alt="Cake Image">
                 </div>
+
             </div>
         </div>
-        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+
+        <!-- Balloon Border Image -->
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border" alt="Balloon Border">
     </div>
+
+    <!-- Birthday Card Section -->
     <div class="birthdaycard">
 
-    <div class="cardfront">
-       <h3 class="happy">Happy Birthday!</h3>
+        <!-- Front of the Card -->
+        <div class="cardfront">
+            <h3 class="happy">Happy Birthday!</h3>
 
-      <div class="balloons">
+            <div class="balloons">
+                <div class="balloon1"></div>
+                <div class="balloon2"></div>
+                <div class="balloon3"></div>
+                <div class="balloon4"></div>
+            </div><!-- end balloons -->
+        </div><!-- end cardfront -->
 
-       <div class="balloon1"></div>
+        <!-- Inside of the Card -->
+        <div class="cardinside">
+            <h3 class="back">HAPPY BIRTHDAY!</h3>
+            <p>Dear Friend,</p>
+            <p>Happy Birthday! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true!</p>
+            <p class="name">xxx</p>
+        </div><!-- end cardinside -->
 
-       <div class="balloon2"></div>
-
-       <div class="balloon3"></div>
-
-       <div class="balloon4"></div>
-
-      </div><!-- end balloons -->
-
-    </div><!-- end cardfront -->
-
-<div class="cardinside">
-<h3 class="back">HAPPY BIRTHDAY!</h3>
-<p>Dear Friend,</p>
-<p>Happy Birthday! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true!</p>
-<p class="name">xxx</p>
-</div><!-- end cardinside -->
-
-</div><!-- end birthdaycard -->
+    </div><!-- end birthdaycard -->
 
 </body>
+
+<!-- External Scripts -->
 <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/typed.min.js"></script>
 <script src="js/script.js"></script>
 
 </html>
+
